@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 99.5vw;
+  min-height: 99.5vh;
+  background-color: #e1e1e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+textarea {
+  width: 100%;
+  height: 25vh;
+  outline: none;
+  border: none;
+  resize: none;
+  text-align:right;
+  font-size: 7.4vh;
+  font-family: "Archivo Black";
+  background-color: #eeeeee;
+  display: block;
+  padding:2vh;
+}
+
+.subcontainer {
+  width: 100%;
+  height: 75vh;
+  display: flex;
+}
+
+.numbers {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 68.7431693vw;
+  height: 100%;
+  background-color: #303841;
+}
+
+button {
+  font-family: "Archivo Black";
+  font-size: 5vh;
+  border: none;
+  outline: none;
+}
+
+.numbers .number {
+  height: 18.75vh;
+  outline: none;
+  width: 22.9143897vw;
+  background-color: #303841;
+  color: #bdbdbd;
+}
+
+.symbols {
+  width: 31.4754098vw;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  background-color: #02a4e4;
+}
+
+.symbols .symbol {
+  width: 15.7377049vw;
+  height: 25vh;
+  outline: none;
+  background-color: #02a4e4;
+  color: white;
+}
+
+#s-equal {
+  width: 100%;
+  grid-column: 1/3;
+  background-color: #ff511c;
+}
+
+.number:active {
+  background-color: #242b31;
+}
+.symbol:active {
+  background-color: #0e8bbd;
+}
+#s-equal:active {
+  background-color: #df3a08;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 55vw;
+    height: 72vh;
+    border-radius: 0.5em;
+    overflow: hidden;
+
+    box-shadow: 5px 5px 5px 2px black, -5px -5px 5px 5px white;
+  }
+
+  textarea {
+    height: 18vh;
+    width: 100%;
+  }
+
+  .subcontainer {
+    height: 54vh;
+  }
+
+  .numbers {
+    width: 37.68852459vw;
+  }
+
+  .numbers .number {
+    height: 13.5vh;
+    width: 12.56284153vw;
+  }
+
+  .symbols {
+    width: 17.3114754vw;
+  }
+
+  .symbols .symbol {
+    height: 18vh;
+    width: 8.6557377vw;
+  }
+
+  .number:active {
+    background-color: #2f373f;
+  }
+  .symbol:active {
+    background-color: #0ca2dd;
+  }
+  #s-equal:active {
+    background-color: #fa4d18;
+  }
+
+  .number:hover {
+    background-color: #232930;
+  }
+  .symbol:hover {
+    background-color: #0286bb;
+  }
+  #s-equal:hover {
+    background-color: #e4410f;
+  }
+}

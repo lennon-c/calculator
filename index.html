@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="container">
+      <textarea
+        name="textarea"
+        id="textarea"
+        cols="20"
+        rows="8"
+        class="textarea"
+        readonly
+      ></textarea>
+      <div class="subcontainer">
+        <div class="numbers">
+          <button
+            class="number"
+            id="n7"
+            onclick="document.getElementById('textarea').value += '7'"
+          >
+            7
+          </button>
+          <button
+            class="number"
+            id="n8"
+            onclick="document.getElementById('textarea').value += '8'"
+          >
+            8
+          </button>
+          <button
+            class="number"
+            id="n9"
+            onclick="document.getElementById('textarea').value += '9'"
+          >
+            9
+          </button>
+          <button
+            class="number"
+            id="n4"
+            onclick="document.getElementById('textarea').value += '4'"
+          >
+            4
+          </button>
+          <button
+            class="number"
+            id="n5"
+            onclick="document.getElementById('textarea').value += '5'"
+          >
+            5
+          </button>
+          <button
+            class="number"
+            id="n6"
+            onclick="document.getElementById('textarea').value += '6'"
+          >
+            6
+          </button>
+          <button
+            class="number"
+            id="n1"
+            onclick="document.getElementById('textarea').value += '1'"
+          >
+            1
+          </button>
+          <button
+            class="number"
+            id="n2"
+            onclick="document.getElementById('textarea').value += '2'"
+          >
+            2
+          </button>
+          <button
+            class="number"
+            id="n3"
+            onclick="document.getElementById('textarea').value += '3'"
+          >
+            3
+          </button>
+          <button
+            class="number"
+            id="n."
+            onclick="document.getElementById('textarea').value += '.'"
+          >
+            .
+          </button>
+          <button
+            class="number"
+            id="n0"
+            onclick="document.getElementById('textarea').value += '0'"
+          >
+            0
+          </button>
+          <button class="number" id="n" onclick="backspace()">⌫</button>
+        </div>
+        <div class="symbols">
+          <button
+            class="symbol"
+            id="s-mul"
+            onclick="document.getElementById('textarea').value += '×'"
+          >
+            ×
+          </button>
+          <button
+            class="symbol"
+            id="s-divide"
+            onclick="document.getElementById('textarea').value += '÷'"
+          >
+            ÷
+          </button>
+          <button
+            class="symbol"
+            id="s-plus"
+            onclick="document.getElementById('textarea').value=document.getElementById('textarea').value.concat('+')"
+          >
+            +
+          </button>
+          <button
+            class="symbol"
+            id="s-minus"
+            onclick="document.getElementById('textarea').value += '−'"
+          >
+            −
+          </button>
+          <button class="symbol" id="s-equal" onclick="check()">=</button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="script.js"></script>
+</html>
